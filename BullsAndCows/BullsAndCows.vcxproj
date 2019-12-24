@@ -153,7 +153,8 @@
   <ItemGroup>
     <ClInclude Include="BullsAndCows.h" />
     <ClInclude Include="FBullCowGame.h" />
-    <ClInclude Include="unreal_syntax.h" />
+    <ClInclude Include="SharedHeaders.h" />
+    <ClInclude Include="UnrealSyntax.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="words.txt" />

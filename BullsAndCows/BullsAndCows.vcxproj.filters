@@ -29,7 +29,10 @@
     <ClInclude Include="FBullCowGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unreal_syntax.h">
+    <ClInclude Include="SharedHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealSyntax.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
