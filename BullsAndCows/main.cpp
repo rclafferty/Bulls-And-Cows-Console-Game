@@ -3,6 +3,8 @@
  *   referencing the FBullAndCows class as needed
  */
 
+#pragma once
+
 #include "BullsAndCows.h"
 
 int main()
@@ -68,15 +70,27 @@ void PrintIntroduction()
     // Set default initial values in FBullCowGame class
     bullCowGame->Reset();
 
-    // Print ASCII art
-    cout << " _______  __   __  __       __       _______            ________  ________  __  __  __  _______ " << endl;
-    cout << "|       ||  | |  ||  |     |  |     |   ____|      //  |   _____||   __   ||  ||  ||  ||   ____|" << endl;
-    cout << "|  |_|  ||  | |  ||  |     |  |     |  |____      //   |  |      |  |  |  ||  ||  ||  ||  |____ " << endl;
-    cout << "|       ||  | |  ||  |     |  |     |____   |    //    |  |      |  |  |  ||  ||  ||  ||____   |" << endl;
-    cout << "|  |_|  ||  |_|  ||  |____ |  |____  ____|  |   //     |  |_____ |  |__|  ||          | ____|  |" << endl;
-    cout << "|_______||_______||_______||_______||_______|  //      |________||________||__________||_______|" << endl;
-    cout << " ______________________________________________________________________________________________ " << endl;
-    cout << "|______________________________________________________________________________________________|" << endl;
+    // Read ASCII art from file
+    ifstream inFile;
+    FString filename = "bullCowArt.txt";
+    inFile.open(filename);
+
+    // If file is invalid
+    if (!inFile)
+    {
+        cerr << "Unable to open file " << filename << endl;
+        exit(1);
+    }
+
+    FString line;
+    while (!inFile.eof())
+    {
+        getline(inFile, line);
+
+        // Print ASCII art
+        cout << line << endl;
+    }
+
     cout << endl;
 
     // Change color to red

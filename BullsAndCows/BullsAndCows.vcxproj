@@ -157,6 +157,7 @@
     <ClInclude Include="UnrealSyntax.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="bullCowArt.txt" />
     <Text Include="words.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

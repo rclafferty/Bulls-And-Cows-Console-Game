@@ -3,6 +3,8 @@
  *   tracking attempt counts, and determining if the game is won
  */
 
+#pragma once
+
 #include "FBullCowGame.h"
 
 FBullCowGame::FBullCowGame()
