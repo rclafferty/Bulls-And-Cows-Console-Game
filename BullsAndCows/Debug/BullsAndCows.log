@@ -1,6 +1,0 @@
-﻿  FBullCowGame.cpp
-E:\GitHub\Bulls-And-Cows-Console-Game\BullsAndCows\FBullCowGame.cpp(32,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-E:\GitHub\Bulls-And-Cows-Console-Game\BullsAndCows\FBullCowGame.cpp(124,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  main.cpp
-  Generating Code...
-  BullsAndCows.vcxproj -> E:\GitHub\Bulls-And-Cows-Console-Game\Debug\BullsAndCows.exe
