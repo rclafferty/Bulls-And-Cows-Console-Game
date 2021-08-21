@@ -19,5 +19,10 @@ public class BullCowGame : ModuleRules
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
 		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
+
+		// Supposed to speed up compilation
+		// Found on https://answers.unrealengine.com/questions/18526/extremely-slow-compiling.html
+		MinFilesUsingPrecompiledHeaderOverride = 1;
+		bFasterWithoutUnity = true;
 	}
 }
